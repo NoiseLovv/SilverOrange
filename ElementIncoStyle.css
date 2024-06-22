@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+/* Set the background color for the body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d2d2d2;
+    height: 100dvh;
+}
+
+/* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+    gap: 2rem;
+    display: flex;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 600%;
+}
+p {
+    font-size: 400%;
+    font-weight: normal;
+}
+.planeT {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+button {
+    width: 70%;
+    font-weight: 500;
+    font-size: larger;
+    padding: 1rem 2rem;
+    border: 0px;
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
+}
+button:active {
+    scale: 0.95;
+    opacity: 0.8;
+}

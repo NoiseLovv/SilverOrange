@@ -1,0 +1,212 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+/* Set the background color for the body */
+body {
+    background: #d2d2d2;
+    height: 100dvh;
+}
+
+/* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+/* Style the navigation list */
+nav ul {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* Style the navigation links and search input */
+nav ul li a,
+nav ul li input {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: #333;
+    transition: color ease-in-out 0.2s;
+}
+
+/* Style the navigation links and search input on hover */
+nav ul li a:hover,
+nav ul li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(193, 193, 193);
+}
+#basket,
+#favorite,
+#profile {
+    transition: ease-in-out 0.2s;
+}
+#basket:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+/* Style the search input */
+#search {
+    background: transparent;
+    width: 451px;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border: 2px solid #000;
+    font-weight: lighter;
+    border-radius: 50px;
+}
+#search input {
+    width: 100%;
+    background: transparent;
+    border: 0px;
+}
+#search input:focus {
+    outline: none;
+    border: 0px transparent;
+}
+input::-webkit-search-cancel-button {
+    appearance: none;
+    cursor: pointer;
+}
+#placeholder {
+    height: 142px;
+}
+
+button {
+    background: transparent;
+}
+#add {
+    text-decoration: none;
+    color: gray;
+    top: 95%;
+    left: 97%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 0.2rem;
+}
+
+#admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.1rem;
+}
+h1{
+    font-size: 210%;
+}
+#imageContainer{
+    width: 296px;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #e8e8e8;
+}
+#imageContainer p{
+    color: gray;
+    width: 50%;
+}
+input #Inp::-webkit-outer-spin-button,
+input#Inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#Inp{
+    color: gray;
+    width: 130%;
+    text-align: center;
+    background: transparent;
+    padding: 1rem;
+}
+p{
+    color: gray;
+}
+.butt{
+    display: flex;
+    gap: 1rem;
+    width: 130%;
+}
+.brand{
+    flex: 1;
+    font-size: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 0;
+    transition: 0.2s;
+}
+.brand:focus{
+    background: black;
+    color: white;
+}
+.brand:active{
+    scale: 0.95;
+}
+.wrap ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap li button{
+    font-size: 120%;
+    border: 0px;
+    transition: 0.2s;
+}
+.wrap li button:hover{
+    color: white;
+}
+.wrap li button:active{
+    scale: 0.95;
+}
+.load{
+    font-size: 140%;
+    font-weight: normal;
+    width: 90%;
+}

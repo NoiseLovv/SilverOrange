@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+/* Set the background color for the body */
+body {
+    background: #d2d2d2;
+    height: 100dvh;
+}
+
+/* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+/* Style the navigation list */
+ul {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* Style the navigation links and search input */
+ul li a,
+ul li input {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: #333;
+    transition: color ease-in-out 0.2s;
+}
+
+/* Style the navigation links and search input on hover */
+nav ul li a:hover,
+nav ul li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(193, 193, 193);
+}
+#basket,
+#favorite,
+#profile {
+    transition: ease-in-out 0.2s;
+}
+#basket:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+/* Style the search input */
+#search {
+    background: transparent;
+    width: 451px;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border: 2px solid #000;
+    font-weight: lighter;
+    border-radius: 50px;
+}
+#search input {
+    width: 100vw;
+    background: transparent;
+    border: 0px;
+}
+#search input:focus {
+    outline: none;
+    border: 0px transparent;
+}
+input::-webkit-search-cancel-button {
+    appearance: none;
+    cursor: pointer;
+}
+#placeholder {
+    height: 142px;
+}
+#chose {
+    display: grid;
+    grid-template-columns: 1fr 20% 1% 70% 1fr;
+    height: calc(100dvh - 142px);
+}
+.brand {
+    grid-column: 2;
+}
+.info {
+    grid-column: 4;
+    background: white;
+}
+.wrap {
+    margin-top: 5%;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.wrap img {
+    height: 100%;
+}
+.wrap button {
+    text-wrap: nowrap;
+    font-size: 120%;
+    font-weight: normal;
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    background: transparent;
+    padding: 1% 2%;
+    border-radius: 50px;
+    transition: ease-in-out 0.1s;
+}
+.wrap button:active {
+    scale: 0.95;
+}
+.info {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info h1 {
+    font-size: xx-large;
+}
+.info ul {
+    font-weight: normal;
+    gap: 2rem;
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+}

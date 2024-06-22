@@ -1,0 +1,186 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+/* Set the background color for the body */
+body {
+    background: #d2d2d2;
+    height: 100dvh;
+}
+
+/* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+/* Style the navigation list */
+ul {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* Style the navigation links and search input */
+ul li a,
+ul li input {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: #333;
+    transition: color ease-in-out 0.2s;
+}
+
+/* Style the navigation links and search input on hover */
+ul li a:hover,
+ul li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(193, 193, 193);
+}
+#basket,
+#favorite,
+#profile {
+    transition: ease-in-out 0.2s;
+}
+#basket:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+#profile:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+}
+/* Style the search input */
+#search {
+    background: transparent;
+    width: 451px;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border: 2px solid #000;
+    font-weight: lighter;
+    border-radius: 50px;
+}
+#search input {
+    width: 100%;
+    background: transparent;
+    border: 0px;
+}
+#search input:focus {
+    outline: none;
+    border: 0px transparent;
+}
+input::-webkit-search-cancel-button {
+    appearance: none;
+    cursor: pointer;
+}
+#placeholder {
+    height: 142px;
+}
+#goods {
+    display: flex;
+    justify-content: center;
+    min-height: 115dvh;
+}
+/* Сетчатый контейнер */
+.wrap {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 425px;
+    gap: 5rem;
+    margin-top: 5%;
+}
+
+/* Элемент сетки */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+}
+#type {
+    font-size: larger;
+}
+.mark {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rest {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#cost {
+    font-size: x-large;
+    font-weight: bold;
+}
+#order {
+    user-select: none;
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: 2px solid;
+    transition: ease-in-out 0.1s;
+}
+#order:active, .chose:active {
+    scale: 0.9;
+}
+.favorite {
+    transition: ease-in-out 0.1s;
+}
+.chose{
+    transition: 0.2s;
+}
+.favorite:active {
+    scale: 0.9;
+    background-image: url(img/heartR.svg);
+    background-repeat: no-repeat;
+}
+
+button {
+    background: transparent;
+}
+#add {
+    text-decoration: none;
+    color: gray;
+    top: 95%;
+    left: 98%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 0.2rem;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SilverOrange</title>
+        <link rel="stylesheet" href="AddGoodsstyle.css" />
+        <link rel="stylesheet" href="Fonts/stylesheet.css" />
+    </head>
+    <body>
+        <!-- Nav section -->
+
+        <section>
+            <nav>
+                <a href="SilverOrange.html"
+                    ><img id="Logo" src="img/Main Logo.png" alt="logo"
+                /></a>
+                <ul>
+                    <li><a href="Catalog.html">Каталог</a></li>
+                    <li><a href="#wheel">Колесо бонусов</a></li>
+                    <li><a href="#certificates">Подарочные сертификаты</a></li>
+                    <li>
+                        <div id="search">
+                            <img src="img/search.svg" alt="" />
+                            <input
+                                type="search"
+                                placeholder="Искать среди 6 брендов"
+                                role="search"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#cart"
+                            ><img id="basket" src="img/Shop bag.svg" alt="bag"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#favorites"
+                            ><img
+                                id="profile"
+                                src="img/Heart.svg"
+                                alt="favorite"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="Acc.html"
+                            ><img id="profile" src="img/Avatar.svg" alt="icon"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Nav section -->
+
+        <section id="placeholder"></section>
+
+        <a href="SilverOrange.html"><button id="add">Back</button></a>
+        <section id="admin">
+            <div class="wrap">
+                <h1>Загрузите новый товар</h1>
+                <div id="imageContainer">
+                    <input type="file" id="fileInput" accept="image/*" />
+                    <p id="textV">Загрузите изображение (296х296 px)</p>
+                    <img id="imagePreview" src="" alt="" />
+                </div>
+                <input
+                    type="text"
+                    name="BrandName"
+                    id="Inp"
+                    placeholder="Название бренда/основное название товара"
+                />
+                <input
+                    type="text"
+                    name="BrandNameMore"
+                    id="Inp"
+                    placeholder="Расширенное наименование товара"
+                />
+                <input
+                    type="number"
+                    name="BrandNameMore"
+                    id="Inp"
+                    placeholder="Стоимость товара"
+                />
+                <p>Добавить в каталог(Выбрать)</p>
+                <div class="butt">
+                    <button class="brand">Avon</button>
+                    <button class="brand">Victoria’s secret</button>
+                    <button class="brand">Dior</button>
+                </div>
+                <p>Пункт каталога(Выбрать)</p>
+                <ul>
+                    <li><button>Духи/парфюмерия</button></li>
+                    <li><button>Консиллеры</button></li>
+                    <li><button>Туалетная вода</button></li>
+                    <li><button>Сыворотки и лосьоны</button></li>
+                    <li><button>Стайлинг</button></li>
+                    <li><button>Расчески и аксессуары</button></li>
+                    <li><button>Шампуни</button></li>
+                    <li><button>Бальзамы</button></li>
+                    <li><button>Маски</button></li>
+                </ul>
+                <button class="brand load">Загрузить товар</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
